@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Pessoa
+from ..models.pessoa import Pessoa
 
 def home(request):
     pessoas = Pessoa.objects.all()
